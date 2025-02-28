@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </head>
+  <body style="background-color: rgb(248, 241, 235);">
+       <!--navbar-->
+       <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgb(33,37,41);">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+            <img src="Photos/default.png" class="img-fluid rounded-circle" width="55" alt="img logo" />
+            <strong>Instant Pizza</strong>
+          </a>
+          <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsing" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsing">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="instantPizza.html" class="nav-link active"><i class="bi bi-house-fill"></i> Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#menu" data-bs-toggle="dropdown" class="nav-link dropdown-toggle"><i class="bi bi-menu-button-wide"></i> Menu</a>
+                <ul class="dropdown-menu">
+                  <li><a href="pizzaMenu.html" class="dropdown-item active">Pizza</a></li>
+                  <li><a href="#" class="dropdown-item">Sandwiches</a></li>
+                  <li><a href="#" class="dropdown-item">Wings</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><h6 class="dropdown-header"><b>Deserts</b></h6></li>
+                  <li><a href="#" class="dropdown-item">Cookies</a></li>
+                  <li><a href="#" class="dropdown-item">Brownies</a></li>
+                  <li><a href="#" class="dropdown-item">Drinks</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#service" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-building-fill-gear"></i> Service</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Community</a></li>
+                  <li><a href="#" class="dropdown-item active">Donation TX Children Hospital</a></li>
+                  <li><a href="#" class="dropdown-item">Customer</a></li>
+                  <li><a href="#" class="dropdown-item">Stores</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"><i class="bi bi-car-front-fill"></i> Track Order</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-currency-dollar"></i> Deals</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">25% Off Menu Price</a></li>
+                  <li><a href="#" class="dropdown-item disabled">Halloween deal</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><h6 class="dropdown-header"><strong>Upcoming deals</strong></h6></li>
+                  <li><a href="#" class="dropdown-item">Christmas deal</a></li>
+                  <li><a href="#" class="dropdown-item">Thanksgiving deals</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#membership" class="nav-link"><i class="bi bi-person-vcard-fill"></i> Membership</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#settings" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-gear-fill"></i> Settings</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#pizza" class="dropdown-item">Profile</a></li>
+                  <li><a href="#" class="dropdown-item">Login</a></li>
+                  <li><a href="#" class="dropdown-item">Sign up</a></li>
+                  <li><a href="#" class="dropdown-item">Instant rewards</a></li>
+                  <li><a href="#" class="dropdown-item">Contact us</a></li>
+                  <li><a href="#" class="dropdown-item">Help</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center">
+              <button type="button" class="btn btn-light btn-sm darkMode me-2" data-bs-theme="dark"><i class="bi bi-brightness-high-fill fs-5"></i></button>
+              <form class="d-flex">
+                <div class="input-group">
+                  <input type="search" class="form-control" id="search" placeholder="Search your fav....">
+                  <button class="btn btn-danger" type="submit">Search</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid d-block justify-content-center align-items-center">
+        <img src="Photos/people-eating-pizza2.jpg" class="img-fluid w-100" alt="" style="object-fit:fill; height: auto;">
+        <div class="container-fluid my-5 ">
+            <p class="lead fs-4"> At Instant Pizza, we believe that great pizza starts with quality ingredients and a passion for flavor. Our menu features a delightful selection of pizzas crafted to satisfy every craving, 
+                whether you prefer classic combinations or adventurous toppings.
+                Take a look at our offerings, and get ready to indulge in a delicious experience. We’re committed to providing you with fresh, mouthwatering pizzas made just for you.
+                Thank you for choosing Instant Pizza! </p>
+          </div>
+    </div>
+  <!--display the pizza-->
+  <div class="container-fluid my-5">
+    <h3 class="text-center display-4 fw-lighter text-uppercase mb-5" style="letter-spacing: 8px;"> our Pizza Menu </h3>
+    <div class="row row-cols-md-2 row-cols-lg-2 row-cols-xl-3 g-3">
+<!--pizza 1-->
+        <div class="col my-5">
+    <div class="card">
+        <div class="card-header text-center bg-danger text-white fs-2"> Classic Margherita
+             </div>
+        <img src="Photos/Pizza1.png" class="card-img-top w-100 h-100 p-4" alt="">
+    <div class="card-body">
+        <p class="card-text mt-2" style="font-size: 20px;">  A timeless favorite, our Classic Margherita features a thin crust topped with rich tomato sauce, fresh mozzarella cheese, and a sprinkle of basil. Simple, fresh, and delicious! </p>
+   <div class="d-flex mx-auto me-5 justify-content-between align-items-center">
+    <a href="#" class="btn btn-outline-danger"><i class="bi bi-cart-fill"></i> Order </a>
+   <small class="fw-bold fs-5"> $12.99 </small>
+   <i class="bi bi-plus-circle-fill fs-5"></i>
+</div>
+    </div>
+    <div class="card-footer">
+        <p class="text-muted text-reset p-1 my-3"> 25% off use the promo code INSTANT24 </p>
+    </div>
+    </div>
+</div>
+
+<!--pizza 2-->
+<div class="col my-5">
+    <div class="card">
+        <div class="card-header text-center bg-dark text-white fs-2"> <p> Pepperoni Delight </p>
+         </div>
+        <img src="Photos/pizza2-removebg-preview.png" class="card-img-top w-100 h-100 rounded-circle p-4" alt="">
+        <div class="card-body">
+        <p class="card-text mt-2" style="font-size: 20px;">  Loaded with generous slices of spicy pepperoni, our Pepperoni Delight is a crowd-pleaser. This pizza combines a zesty tomato base with melted mozzarella for the perfect cheesy experience. </p>
+  <div class="d-flex mx-auto me-5 justify-content-between align-items-center">
+    <a href="#" class="btn btn-outline-danger"><i class="bi bi-cart-fill"></i> Order</a>
+    <small class="fw-bold fs-5">$12.99</small>
+    <i class="bi bi-plus-circle-fill fs-4 "></i>
+  </div>
+    </div>
+    <div class="card-footer">
+        <p class="text-muted text-reset text-center p-1 my-3"> 25% off use the promo code INSTANT24 </p> 
+    </div>
+    </div>
+</div>
+
+<!--pizza3-->
+<div class="col my-5">
+    <div class="card">
+        <div class="card-header text-center bg-dark text-white fs-2"> BBQ Chicken
+             </div>
+        <img src="Photos/pizza3-removebg-preview.png" class="card-img-top h-100 p-3 mx-5 " alt="" style="width: 70%;">
+    <div class="card-body">
+        <p class="card-text mt-2" style="font-size: 20px;">  Experience a burst of flavor with our BBQ Chicken pizza. Tender grilled chicken, tangy barbecue sauce, red onions, and cilantro come together on a cheesy base for a smoky delight. </p>
+   <div class="d-flex mx-auto me-5 justify-content-between align-items-center">
+    <a href="#" class="btn btn-outline-danger"><i class="bi bi-cart-fill"></i> Order </a>
+   <small class="fw-bold fs-5"> $12.99 </small>
+   <i class="bi bi-plus-circle-fill fs-5"></i>
+</div>
+    </div>
+    <div class="card-footer">
+        <p class="text-muted text-reset p-1 my-3"> 25% off use the promo code INSTANT24 </p>
+    </div>
+    </div>
+</div>
+<!--pizza4-->
+<div class="col my-5">
+    <div class="card">
+        <div class="card-header text-center bg-danger text-white fs-2"> Veggie Supreme
+             </div>
+        <img src="Photos/pizza4-removebg-preview.png" class="card-img-top w-100 h-100 p-4" alt="">
+    <div class="card-body">
+        <p class="card-text mt-2" style="font-size: 20px;"> A garden of flavors awaits with our Veggie Supreme. Topped with bell peppers, red onions, mushrooms, olives, and spinach, this pizza is a colorful and healthy choice for veggie lovers. </p>
+   <div class="d-flex mx-auto me-5 justify-content-between align-items-center">
+    <a href="#" class="btn btn-outline-danger"><i class="bi bi-cart-fill"></i> Order </a>
+   <small class="fw-bold fs-5"> $12.99 </small>
+   <i class="bi bi-plus-circle-fill fs-5"></i>
+</div>
+    </div>
+    <div class="card-footer">
+        <p class="text-muted text-reset p-1 my-3"> 25% off use the promo code INSTANT24 </p>
+    </div>
+    </div>
+</div>
+<!--pizza5-->
+<div class="col my-5">
+    <div class="card">
+        <div class="card-header text-center bg-dark text-white fs-2"> Hawaiian Paradise
+             </div>
+        <img src="Photos/pizza5-removebg-preview.png" class="card-img-top w-100 h-100 p-4" alt="">
+    <div class="card-body">
+        <p class="card-text mt-2" style="font-size: 20px;">  Sweet and savory collide in our Hawaiian Paradise pizza. Featuring ham, juicy pineapple chunks, and melted cheese, this tropical treat will transport your taste buds to the islands. </p>
+   <div class="d-flex mx-auto me-5 justify-content-between align-items-center">
+    <a href="#" class="btn btn-outline-danger"><i class="bi bi-cart-fill"></i> Order </a>
+   <small class="fw-bold fs-5"> $12.99 </small>
+   <i class="bi bi-plus-circle-fill fs-5"></i>
+</div>
+    </div>
+    <div class="card-footer">
+        <p class="text-muted text-reset p-1 my-3"> 25% off use the promo code INSTANT24 </p>
+    </div>
+    </div>
+</div>
+
+<!--pizza6-->
+<div class="col my-5" style="height:60%">
+    <div class="card">
+        <div class="card-header text-center bg-danger text-white fs-2"> Spicy Italian Sausage
+             </div>
+        <img src="Photos/pizza6-removebg-preview.png" class="card-img-top h-100 p-2 mx-5" alt="" style="width: 72%;">
+    <div class="card-body">
+        <p class="card-text mt-2" style="font-size: 20px;">   For those who enjoy a little heat, our Spicy Italian Sausage pizza is a must-try. Packed with spicy sausage, roasted red peppers, and mozzarella, it’s a flavorful kick in every bite. </p>
+   <div class="d-flex mx-auto me-5 justify-content-between align-items-center">
+    <a href="#" class="btn btn-outline-danger"><i class="bi bi-cart-fill"></i> Order </a>
+   <small class="fw-bold fs-5"> $12.99 </small>
+   <i class="bi bi-plus-circle-fill fs-5"></i>
+</div>
+    </div>
+    <div class="card-footer">
+        <p class="text-muted text-reset p-1 my-3"> 25% off use the promo code INSTANT24 </p>
+    </div>
+    </div>
+</div>
+
+<!--pizza7-->
+
+
+<!--pizza8-->
+<div class="col my-5">
+    <div class="card">
+        <div class="card-header text-center bg-dark text-white fs-2"> Pesto Veggie
+             </div>
+        <img src="Photos/pizza8-removebg-preview.png" class="card-img-top w-100 h-100 p-4" alt="">
+    <div class="card-body">
+        <p class="card-text mt-2" style="font-size: 20px;"> Bright and aromatic, our Pesto Veggie pizza features a basil pesto base topped with sun-dried tomatoes, artichokes, and feta cheese. A fresh twist on traditional pizza! </p>
+   <div class="d-flex mx-auto me-5 justify-content-between align-items-center">
+    <a href="#" class="btn btn-outline-danger"><i class="bi bi-cart-fill"></i> Order </a>
+   <small class="fw-bold fs-5"> $12.99 </small>
+   <i class="bi bi-plus-circle-fill fs-5"></i>
+</div>
+    </div>
+    <div class="card-footer">
+        <p class="text-muted text-reset p-1 my-3"> 25% off use the promo code INSTANT24 </p>
+    </div>
+    </div>
+</div>
+<!--pizza9-->
+<div class="col my-5">
+    <div class="card">
+        <div class="card-header text-center bg-danger text-white fs-2"> Meat Lovers
+             </div>
+        <img src="Photos/pizza9-removebg-preview.png" class="card-img-top w-100 h-100 p-4" alt="">
+    <div class="card-body">
+        <p class="card-text mt-2" style="font-size: 20px;"> For the ultimate carnivore, our Meat Lovers pizza is loaded with pepperoni, sausage, ham, and bacon. A hearty feast that satisfies even the biggest appetites. </p>
+   <div class="d-flex mx-auto me-5 justify-content-between align-items-center">
+    <a href="#" class="btn btn-outline-danger"><i class="bi bi-cart-fill"></i> Order </a>
+   <small class="fw-bold fs-5"> $12.99 </small>
+   <i class="bi bi-plus-circle-fill fs-5"></i>
+</div>
+    </div>
+    <div class="card-footer">
+        <p class="text-muted text-reset p-1 my-3"> 25% off use the promo code INSTANT24 </p>
+    </div>
+    </div>
+</div>
+<!--pizza10-->
+<div class="col my-5">
+    <div class="card">
+        <div class="card-header text-center bg-dark text-white fs-2"> Buffalo Chicken
+             </div>
+        <img src="Photos/pizza10-removebg-preview.png" class="card-img-top w-100 h-100 p-4" alt="">
+    <div class="card-body">
+        <p class="card-text mt-2" style="font-size: 20px;"> Spice up your meal with our Buffalo Chicken pizza. Featuring spicy buffalo sauce, grilled chicken, and drizzled with ranch dressing, it’s a bold and flavorful choice. </p>
+   <div class="d-flex mx-auto me-5 justify-content-between align-items-center">
+    <a href="#" class="btn btn-outline-danger"><i class="bi bi-cart-fill"></i> Order </a>
+   <small class="fw-bold fs-5"> $12.99 </small>
+   <i class="bi bi-plus-circle-fill fs-5"></i>
+</div>
+    </div>
+    <div class="card-footer">
+        <p class="text-muted text-reset p-1 my-3"> 25% off use the promo code INSTANT24 </p>
+    </div>
+    </div>
+</div>
+    </div>
+  </div>
+<!--pagination-->
+<ul class="pagination  justify-content-center" style="margin:20px 0">
+    <li class="page-item"><a href="#" class="page-link">Previous </a></li>
+    <li class="page-item"><a href="#" class="page-link">1 </a></li>
+    <li class="page-item"><a href="#" class="page-link active">2</a></li>
+    <li class="page-item"><a href="#" class="page-link">3</a></li>
+    <li class="page-item"><a href="#" class="page-link">4</a></li>
+    <li class="page-item"><a href="#" class="page-link ">5</a></li>
+    <li class="page-item"><a href="#" class="page-link ">6</a></li>
+    <li class="page-item"><a href="#" class="page-link">7</a></li>
+    <li class="page-item"><a href="#" class="page-link">8</a></li>
+    <li class="page-item"><a href="#" class="page-link ">9</a></li>
+    <li class="page-item"><a href="#" class="page-link ">10</a></li>
+    <li class="page-item"><a href="#" class="page-link ">Next</a></li>
+</ul>
+
+  <hr class="border-bottom my-3 shadow-lg">
+<!--footer-->
+<footer class="text-muted text-center text-lg-center bg-dark text-white">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom text-white">
+       <div class="d-none d-lg-block">
+        <span style="font-size: 20px;">  <i>Stay connected with us on our social platforms... </i></span>
+       </div>
+       <div>
+        <a href="#" class="text-reset me-4"><i class="bi bi-facebook fs-3"></i></a>
+        <a href="#" class="text-reset me-4"><i class="bi bi-instagram fs-3"></i></a>
+        <a href="#" class="text-reset me-4"><i class="bi bi-pinterest fs-3"></i></a>
+        <a href="#" class="text-reset me-4"><i class="bi bi-twitter-x fs-3"></i></a>                                                                                                                                                                                   
+        <a href="#" class="text-reset me-4"><i class="bi bi-whatsapp fs-3"></i></a>
+       </div>
+    </section>
+       <section class="text-center text-md-start mt-5 container text-white">
+<div class="row mt-3">
+    <div class="col-md-3 col-sm-6  justify-content-start mx-auto mb-4">
+        <img src="Photos/default.png" class="img-fluid rounded-circle d-flex me-5 " alt="logo" width="90px"> 
+        <h6 class="text-uppercase fw-bold  mb-4 d-flex mt-3">About Us</h6>
+    <div class="container justify-content-end">
+    <p> At Instant Pizza, we believe that great taste shouldn't come at the expense of convenience.</p>
+    <button type="button" class="btn  btn-outline-danger"> Learn More </button>
+    </div>
+</div>
+
+    <div class="col-md-3 col-lg-3 col-sm-6 mb-4" width="60px">
+        <h6 class="text-uppercase fw-bold mb-4 "> Policies </h6>
+        <p><a href="#" class="text-reset text-decoration-none" data-bs-toggle="modal" data-bs-target="#policy"> Privacy Policy </a></p>
+        <div class="modal fade" id="policy">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down">
+           <div class="modal-content">
+            <div class="modal-header text-dark">
+                <h6 class="modal-title text-uppercase fw-bold text-center"> Privacy policy </h6>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-dark">
+                <p> At Instant Pizza, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website, make a purchase, or engage with our services. By using our services, you agree to the collection and use of information in accordance with this policy.
+
+                    1. Information We Collect
+                    1.1 Personal Information
+                    
+                    We may collect personal information that you provide directly to us, including but not limited to:
+                    
+                    Name
+                    Email address
+                    Phone number
+                    Shipping address
+                    Billing information (credit card details)
+                    1.2 Non-Personal Information
+                    
+                    We may also collect non-personal information automatically when you visit our website, including:
+                    
+                    IP address
+                    Browser type
+                    Operating system
+                    Pages viewed
+                    Time and date of access
+                    2. How We Use Your Information
+                    We use the information we collect for various purposes, including:
+                    
+                    To process and fulfill your orders
+                    To communicate with you about your orders and our services
+                    To improve our website, products, and services
+                    To send you promotional materials and newsletters (you can opt-out at any time)
+                    To respond to your inquiries and provide customer support
+                    To comply with legal obligations
+                    3. Sharing Your Information
+                    We do not sell or rent your personal information to third parties. However, we may share your information in the following circumstances:
+                    
+                    Service Providers: We may share your information with third-party service providers who assist us in operating our website, conducting our business, or servicing you (e.g., payment processors, shipping companies).
+                    Legal Requirements: We may disclose your information if required to do so by law or in response to valid requests by public authorities.
+                    4. Cookies and Tracking Technologies
+                    We use cookies and similar tracking technologies to enhance your experience on our website. Cookies are small files that are stored on your device. You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can modify your browser setting to decline cookies if you prefer.
+                    
+                    5. Data Security
+                    We take the security of your personal information seriously and implement reasonable measures to protect it. However, no method of transmission over the internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.
+                    
+                    6. Your Rights
+                    You have certain rights regarding your personal information, including:
+                    
+                    The right to access your personal information
+                    The right to request correction of inaccurate or incomplete information
+                    The right to request deletion of your personal information
+                    The right to object to the processing of your personal information
+                    The right to withdraw consent at any time where we rely on your consent to process your personal information
+                    To exercise these rights, please contact us using the information provided below.
+                    
+                    7. Third-Party Websites
+                    Our website may contain links to third-party websites. We do not control these websites and are not responsible for their content or privacy practices. We encourage you to review the privacy policies of any third-party websites you visit.
+                    
+                    8. Changes to This Privacy Policy
+                    We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.
+                    
+                    9. Contact Us
+                    If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
+                    
+                    Instant Pizza
+                    
+                    Email: support@instantpizza.com
+                    
+                    Phone: 1-800-555-PIZA
+                    
+                    Address: [Your Company Address]
+                    
+                </p>  
+            </div> 
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success"> Okay </button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Close </button>
+            </div>                 
+            </div>
+            </div>
+        </div>
+        <p><a href="#" class="text-reset text-muted text-decoration-none"> Terms of Service </a></p>
+        <p><a href="#" class="text-reset text-muted text-decoration-none"> Refund Policy</a></p>
+    </div>
+
+    <div class="col-md-3 col-lg-3 col-sm-6 mb-4" width="60px">
+        <h6 class="fw-bold text-uppercase mb-4"> Customer Support </h6>
+        <p> <i class="bi bi-envelope-fill fs-5 me-2"></i> <a href="#" class="text-reset text-muted text-decoration-none"> Email: support@instantpizza.com </a></p>
+        <p> <i class="bi bi-telephone-fill fs-5 me-2"></i> <a href="#" class="text-reset text-muted text-decoration-none"> Phone: 1-800-555-PIZA </a></p>
+        <p> <i class="bi bi-question-circle-fill fs-5 me-2"></i> <a href="#faq" class="text-reset text-muted text-decoration-none"> FAQ </a></p>
+        <p><i class="bi bi-truck fs-5 me-2"></i><a href="#" class="text-reset text-muted text-decoration-none"> Shipping Information </a></p>
+    </div>
+
+    <div class="col-md-3 col-lg-3 col-sm-6 mb-4 ">
+        <h6 class="text-uppercase fw-bold mb-4"> Join Our Newsletter </h6>
+        <p><a href="#" class="text-reset text-decoration-none"> Sign up for exclusive offers!</a></p>
+        <p><a href="#" class="text-reset text-decoration-none"> Careers</a></p>
+        <form class="flex-row d-flex mx-auto">
+            <input type="email" class="form-control me-1" placeholder="Sign up" id="" style="width:auto">
+       <button type="button" class="btn btn-danger">Register</button>
+        </form>
+        <p><a href="#" class="text-reset text-muted text-decoration-none"> Stay updated on new flavors! </a></p>
+        
+    </div>
+</div>
+       </section>
+       <div class="container-fluid text-center p-4 text-white" style="background-color: rgba(93, 90, 90, 0.087);">
+       <p> &copy; All Right Reserved @ istockphoto and Instant Pizza Inc. 2024</p> 
+<p><a href="#home" class="text-reset fw-bold text-uppercase mt-3"><i class="bi bi-stars me-2 fs-5"></i> Instant pizza </a></p>
+<h6 class="text-md-start"><strong class="fw-bold"> Disclaimer</strong> </h6>
+<p class="text-md-start"> Please note this is not a real website everything here is fake it's for educational purpose only thank you
+    <blockquote class="text-md-start blockquote-footer text-white"><cite>Ejeme. EJ</cite></blockquote>
+</p>
+</div>
+</footer>
+
+  <!--script done by cody(ai)-->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const darkModeToggle = document.querySelector('.darkMode');
+    const body = document.body;
+    const cards = document.querySelectorAll('.card');
+    const paragraphs = document.querySelectorAll('p');
+
+    darkModeToggle.addEventListener('click', function() {
+        body.classList.toggle('bg-dark');
+        body.classList.toggle('text-light');
+        
+        cards.forEach(card => {
+            card.classList.toggle('bg-dark');
+            card.classList.toggle('text-light');
+        });
+
+        paragraphs.forEach(p => {
+            p.classList.toggle('text-light');
+        });
+
+        if (body.classList.contains('bg-dark')) {
+            darkModeToggle.classList.replace('btn-dark', 'btn-light');
+        } else {
+            darkModeToggle.classList.replace('btn-light', 'btn-dark');
+        }
+    });
+});
+</script>
+  </body>
+</html>
