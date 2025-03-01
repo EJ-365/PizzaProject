@@ -34,7 +34,9 @@
 
 /*google fonts*/
 body {
-    /*N/A */
+    /* adding the max-width and height to avoid over-floating */
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 .darkMode {
