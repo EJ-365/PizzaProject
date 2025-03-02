@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Login Page </title>
+    <!--bootstrap links, icons and js-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: rgb(33,37,41);">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="Photos/default.png" class="img-fluid rounded-circle" width="55" alt="img logo" />
+                <strong>Instant Pizza<a href="instantPizza.html"></a></strong>
+            </a>
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsing" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsing">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active"><i class="bi bi-house-fill"></i> Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#menu" data-bs-toggle="dropdown" class="nav-link dropdown-toggle"><i
+                                class="bi bi-menu-button-wide"></i> Menu</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pizzaMenu.html" class="dropdown-item active">Pizza</a></li>
+                            <li><a href="#" class="dropdown-item">Sandwiches</a></li>
+                            <li><a href="#" class="dropdown-item">Wings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header"><b>Deserts</b></h6>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Cookies</a></li>
+                            <li><a href="#" class="dropdown-item">Brownies</a></li>
+                            <li><a href="#" class="dropdown-item">Drinks</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#service" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="bi bi-building-fill-gear"></i> Service</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Community</a></li>
+                            <li><a href="#" class="dropdown-item active">Donation TX Children Hospital</a></li>
+                            <li><a href="#" class="dropdown-item">Customer</a></li>
+                            <li><a href="#" class="dropdown-item">Stores</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="bi bi-car-front-fill"></i> Track Order</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="bi bi-currency-dollar"></i>
+                            Deals</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">25% Off Menu Price</a></li>
+                            <li><a href="#" class="dropdown-item disabled">Halloween deal</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header"><strong>Upcoming deals</strong></h6>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Christmas deal</a></li>
+                            <li><a href="#" class="dropdown-item">Thanksgiving deals</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#membership" class="nav-link"><i class="bi bi-person-vcard-fill"></i> Membership</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#settings" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="bi bi-gear-fill"></i> Settings</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#pizza" class="dropdown-item">Profile</a></li>
+                            <li><a href="#" class="dropdown-item">Login</a></li>
+                            <li><a href="#" class="dropdown-item">Sign up</a></li>
+                            <li><a href="#" class="dropdown-item">Instant rewards</a></li>
+                            <li><a href="#" class="dropdown-item">Contact us</a></li>
+                            <li><a href="#" class="dropdown-item">Help</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-light btn-sm darkMode me-2" data-bs-theme="dark"><i <i
+                            class="bi bi-brightness-high-fill fs-5"></i></button>
+                    <form class="d-flex">
+                        <div class="input-group">
+                            <input type="search" class="form-control" id="search" placeholder="Search your fav....">
+                            <button class="btn btn-danger" type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--login form-->
+    <main class="container-fluid p-0 m-0">
+        <div class="min-vh-100 position-relative d-flex justify-content-center align-items-center"
+            style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Photos/mixed-pizza-with-sliced-lemon.jpg') center/cover no-repeat fixed; min-width: 100vw;">
+            <div class="row justify-content-center w-100">
+                <div class="col-lg-6 col-sm-6 col-md-6">
+                    <div class="card border-0">
+                        <div class="shadow-lg rounded-circle">
+                            <div class="card-header bg-danger text-white py-4">
+                                <h2 class="fw-bold mb-0">
+                                    <i class="bi bi-door-open-fill me-2"></i> InstantPizza
+                                </h2>
+                            </div>
+                            <div class="card-body bg-white text-dark p-5">
+                                <form class="needs-validation" novalidate>
+                                    <div class="mb-4">
+                                        <label for="email" class="form-label fw-bold">Email:</label>
+                                        <input type="email" class="form-control form-control-lg" id="email"
+                                            placeholder="name@gmail.com" required>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="password" class="form-label fw-bold">Password</label>
+                                        <input type="password" class="form-control form-control-lg" id="password"
+                                            name="password" placeholder="*******************" required>
+                                    </div>
+                                    <div class="mb-4">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                                        </div>
+                                    </div>
+                                    <div class="d-grid gap-3">
+                                        <button type="submit" class="btn btn-dark btn-lg py-2">
+                                            <i class="bi bi-mailbox me-2"></i> Login
+                                        </button>
+                                    </div>
+                                    <div class="mt-4 text-center">
+                                        <a href="#" class="text-decoration-none">Forgot Password?</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!--bootstrap js file goes here-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--script done by Cody(ai)-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const darkModeToggle = document.querySelector('.darkMode');
+            const body = document.body;
+            const cards = document.querySelectorAll('.card');
+            const paragraphs = document.querySelectorAll('p');
+
+            darkModeToggle.addEventListener('click', function () {
+                body.classList.toggle('bg-dark');
+                body.classList.toggle('text-light');
+
+                cards.forEach(card => {
+                    card.classList.toggle('bg-dark');
+                    card.classList.toggle('text-light');
+                });
+
+                paragraphs.forEach(p => {
+                    p.classList.toggle('text-light');
+                });
+
+                if (body.classList.contains('bg-dark')) {
+                    darkModeToggle.classList.replace('btn-dark', 'btn-light');
+                } else {
+                    darkModeToggle.classList.replace('btn-light', 'btn-dark');
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
