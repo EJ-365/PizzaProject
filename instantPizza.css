@@ -34,11 +34,6 @@
 
 /*google fonts*/
 body {
-<<<<<<< HEAD
-    /* adding the max-width and height to avoid over-floating */
-  max-width: 100vw;
-  max-height: 100vh;
-=======
   /* adding the max-width and height to avoid over-floating */
   max-width: 100vw;
   max-height: 100vh;
@@ -46,7 +41,7 @@ body {
 
 /* updating images for the pizza carousel */
 .d-block {
-  width: 75%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -60,14 +55,13 @@ body {
   display: block;
 }
 
-/* for the image of the lady eating pizza */
+/* for the image of the lady eating pizza in the toast */
 .pop-up-img {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
   display: block;
   border-radius: 50%;
->>>>>>> fixBug
 }
 
 .darkMode {
