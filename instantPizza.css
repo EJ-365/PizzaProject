@@ -1,12 +1,12 @@
 .card:hover {
-  background-color: rgb(241, 236, 236);
+  background-color: #f1ecec;
 }
 
 .is-featured {
-  background-color: rgb(227, 27, 27);
+  background-color: #e31b1b;
 }
 .plan-price:hover {
-  background-color: rgb(227, 27, 27);
+  background-color: #e31b1b;
 }
 
 .menu a {
@@ -19,7 +19,7 @@
 }
 
 .dropdown li a:hover {
-  color: rgb(248, 12, 12);
+  color: #f80c0c;
 }
 
 .dropdown li a {
@@ -27,7 +27,7 @@
 }
 
 .instant-logo {
-  background-color: rgb(231, 81, 81);
+  background-color: #e75151;
   text-transform: uppercase;
   text-decoration: solid 3px underline;
 }
