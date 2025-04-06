@@ -12,7 +12,7 @@
   
   
   #membership .cta {
-    color: darkorange;
+    color: #e75151;
     margin-bottom: 1rem;
     font-size: 2.5rem;
     font-weight: bold;
@@ -21,7 +21,7 @@
   
   #membership p {
     font-size: 1.2rem;
-    color: #333;
+    color: black;
     max-width: 800px;
     margin: 30px auto;
     text-transform: none;
@@ -58,12 +58,7 @@
   }
   
   /* Main content styling */
-  h3 {
-    text-transform: uppercase;
-    margin: 30px;
-    font-weight: 500;
-    color: orange;
-  }
+ 
   
   p {
     text-transform: uppercase;
@@ -80,7 +75,7 @@
     text-align: center;
     margin: 4px;
     box-sizing: border-box;
-    border: 1px solid orange;
+    border: 1px solid #e75151;
   }
   
   h1,h2 {
@@ -88,7 +83,7 @@
     margin: 15px auto;
     margin-bottom: 7px;
     font-weight: bold;
-    color: darkorange;
+    color: #e75151;
   }
   
   button {
@@ -96,7 +91,7 @@
     padding: 15px;
     margin: 10px;
     background: none;
-    border: 1px solid orange;
+    border: 1px solid #e75151;
     border-radius: 10px;
     width: 130px;
     transition: background-color 0.5s linear;
@@ -105,19 +100,19 @@
   /* button hovering */
   button:hover {
     cursor: pointer;
-    background-color: orange;
+    background-color: #e75151;
     color: white;
   }
   
   /* selected button */
   .active {
-    background-color: orange;
+    background-color: #e75151;
     color: white;
   }
   
   .smallTeam {
     background-color: #f9f2e3;
-    border: 2px solid orange;
+    border: 2px solid #e75151;
     cursor: pointer;
     transform: scale(1.05);
     box-shadow: 0 15px 30px rgba(0,0,0,0.15);
