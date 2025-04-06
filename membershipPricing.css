@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+    min-width:100vw;
+    min-height: 100vh;
+  }
+  
+  
+  #membership .cta {
+    color: #e75151;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #membership p {
+    font-size: 1.2rem;
+    color: black;
+    max-width: 800px;
+    margin: 30px auto;
+    text-transform: none;
+    line-height: 1.5;
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* border: 2px solid; */
+    margin: 20px auto;
+    padding: 0;
+    text-align: center;
+    gap:20px;
+    width:auto;
+  }
+  
+  .box {
+    /* background-color: green; */
+    width: 300px;
+    height: auto;
+    padding: 0 20px;
+    border-radius: 10px;
+  }
+  
+  /* personal image svg */
+  .personal-img {
+    width: 200px;
+    text-align: center;
+  }
+  
+  /* Main content styling */
+ 
+  
+  p {
+    text-transform: uppercase;
+    color: black;
+    margin: 0 15px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+  }
+  
+  hr {
+    text-align: center;
+    margin: 4px;
+    box-sizing: border-box;
+    border: 1px solid #e75151;
+  }
+  
+  h1,h2 {
+    text-transform: uppercase;
+    margin: 15px auto;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #e75151;
+  }
+  
+  button {
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 10px;
+    background: none;
+    border: 1px solid #e75151;
+    border-radius: 10px;
+    width: 130px;
+    transition: background-color 0.5s linear;
+  }
+  
+  /* button hovering */
+  button:hover {
+    cursor: pointer;
+    background-color: #e75151;
+    color: white;
+  }
+  
+  /* selected button */
+  .active {
+    background-color: #e75151;
+    color: white;
+  }
+  
+  .smallTeam {
+    background-color: #f9f2e3;
+    border: 2px solid #e75151;
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    z-index:1;
+  }
+
+  .smallTeam:hover{
+    transform: scale(1.05);
+  }
+
+  /* new update */
+  .box strong{
+    font-weight: bold;
+    font-size: 16.5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .box:hover{
+    cursor: pointer;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  }
+  @media (max-width: 895px) {
+    .box {
+      margin-bottom: 35px;
+    }
+    body {
+      background-color: #fcf9f6;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
