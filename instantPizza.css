@@ -71,8 +71,8 @@ body {
 /*remove the top header cta and paragraph */
 @media screen and (max-width: 480px) {
   .top-header-cta, .top-p-cta {
-    display: none; !important
-  }
-  /* The marquee will remain visible */
+    display: none !important;
+  }  /* The marquee will remain visible */
 }
+
 
