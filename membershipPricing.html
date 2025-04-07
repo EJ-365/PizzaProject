@@ -5,6 +5,14 @@
     <title> Memberhip Plan </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+   
     <!--link to css file-->
     <link rel="stylesheet" href="membershipPricing.css">
     <!--google fonts-->
@@ -15,6 +23,98 @@
         rel="stylesheet">
 </head>
 <body>
+      <!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: rgb(33,37,41);">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand">
+        <img src="Photos/default.png" class="img-fluid rounded-circle" width="55" alt="img logo" />
+        <strong>Instant Pizza</strong>
+      </a>
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsing" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsing">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active"><i class="bi bi-house-fill"></i> Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#menu" data-bs-toggle="dropdown" class="nav-link dropdown-toggle"><i
+                class="bi bi-menu-button-wide"></i> Menu</a>
+            <ul class="dropdown-menu">
+              <li><a href="pizzaMenu.html" class="dropdown-item active">Pizza</a></li>
+              <li><a href="#" class="dropdown-item">Sandwiches</a></li>
+              <li><a href="#" class="dropdown-item">Wings</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <h6 class="dropdown-header"><b>Deserts</b></h6>
+              </li>
+              <li><a href="#" class="dropdown-item">Cookies</a></li>
+              <li><a href="#" class="dropdown-item">Brownies</a></li>
+              <li><a href="#" class="dropdown-item">Drinks</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#service" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                class="bi bi-building-fill-gear"></i> Service</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item">Community</a></li>
+              <li><a href="#" class="dropdown-item active">Donation TX Children Hospital</a></li>
+              <li><a href="#" class="dropdown-item">Customer</a></li>
+              <li><a href="#" class="dropdown-item">Stores</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="bi bi-car-front-fill"></i> Track Order</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-currency-dollar"></i>
+              Deals</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item">25% Off Menu Price</a></li>
+              <li><a href="#" class="dropdown-item disabled">Halloween deal</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <h6 class="dropdown-header"><strong>Upcoming deals</strong></h6>
+              </li>
+              <li><a href="#" class="dropdown-item">Christmas deal</a></li>
+              <li><a href="#" class="dropdown-item">Thanksgiving deals</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="membershipPricing.html" data-bs-target="#membershipPricing" class="nav-link"><i class="bi bi-person-vcard-fill"></i> Membership</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#settings" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                class="bi bi-gear-fill"></i> Settings</a>
+            <ul class="dropdown-menu">
+              <li><a href="#pizza" class="dropdown-item">Profile</a></li>
+              <li><a href="login.html" class="dropdown-item">Login</a></li>
+              <li><a href="#" class="dropdown-item">Sign up</a></li>
+              <li><a href="#" class="dropdown-item">Instant rewards</a></li>
+              <li><a href="#" class="dropdown-item">Contact us</a></li>
+              <li><a href="#" class="dropdown-item">Help</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <button type="button" class="btn btn-light btn-sm darkMode me-2" data-bs-theme="dark"><i
+              class="bi bi-brightness-high-fill fs-5"></i></button>
+          <form class="d-flex">
+            <div class="input-group">
+              <input type="search" class="form-control" id="search" placeholder="Search your fav....">
+              <button class="btn btn-danger" type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</nav>
+  
     <div id="membership">
       <h1 class="cta">Join the Instant Pizza Membership!</h1>
       <p>
@@ -41,7 +141,7 @@
                 <hr>
                 <div class="card-footer">
                     <h1> free </h1>
-                    <button> sign up </button>
+                    <button class="price-btn"> sign up </button>
                 </div>
             </div>
         </div>
@@ -61,7 +161,7 @@
                 <hr>
                 <div class="card-footer">
                     <h1>$9.99 </h1>
-                    <button class="active"> Free Trial </button>
+                    <button class="price-btn price-btn-active "> Free Trial </button>
                 </div>
             </div>
         </div>
@@ -81,11 +181,65 @@
                 <hr>
                 <div class="card-footer">
                     <h1> $15.99</h1>
-                    <button> upgrade </button>
+                    <button class="price-btn"> upgrade </button>
                 </div>
             </div>
         </div>
     </div>
+
+<!--script for dark mode-->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const darkModeToggle = document.querySelector('.darkMode');
+      const body = document.body;
+      const boxes = document.querySelectorAll('.box');
+      const paragraphs = document.querySelectorAll('p');
+      const headings = document.querySelectorAll('h1, h2');
+      const membershipSection = document.getElementById('membership');
+  
+      darkModeToggle.addEventListener('click', function () {
+        // Toggle dark mode for body
+        body.classList.toggle('bg-dark');
+        body.classList.toggle('text-light');
+  
+        // Toggle dark mode for membership boxes
+        boxes.forEach(box => {
+          box.classList.toggle('bg-dark');
+          box.classList.toggle('text-light');
+          // If box has smallTeam class, preserve its special styling
+          if (box.classList.contains('smallTeam')) {
+            if (body.classList.contains('bg-dark')) {
+              box.style.backgroundColor = '#2c2c2c';
+            } else {
+              box.style.backgroundColor = '#f9f2e3';
+            }
+          }
+        });
+  
+        // Toggle dark mode for paragraphs
+        paragraphs.forEach(p => {
+          p.classList.toggle('text-light');
+        });
+  
+        // Toggle dark mode for headings
+        headings.forEach(heading => {
+          if (body.classList.contains('bg-dark')) {
+            heading.style.color = '#ff6b6b'; // Lighter red in dark mode
+          } else {
+            heading.style.color = '#e75151'; // Original red color
+          }
+        });
+  
+        // Toggle button icon
+        if (body.classList.contains('bg-dark')) {
+          darkModeToggle.classList.replace('btn-dark', 'btn-light');
+        } else {
+          darkModeToggle.classList.replace('btn-light', 'btn-dark');
+        }
+      });
+    });
+  </script>
+  
 </body>
 
 </html>

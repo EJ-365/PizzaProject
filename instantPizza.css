@@ -67,3 +67,10 @@ body {
 .darkMode {
   border-radius: 50%;
 }
+
+/*remove the top header cta and paragraph */
+@media screen and (max-width: 470px) {
+  .top-header-cta, .top-p-cta{
+    display:none
+  }
+}

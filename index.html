@@ -23,135 +23,114 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<!--little header display-->
+<header>
+<div class="container-fluid p-3 bg-dark text-white ">
+  <h4 class="text-start fw-bold mx-3 top-header-cta"><i class="bi bi-wallet-fill"></i> Sign up and earn a reward</h4>
+  <p class="lead mx-3 top-p-cta "> Join the Instant Pizza membership today and start earning delicious rewards! With every order, you'll accumulate loyalty points that can be redeemed for free pizzas and exclusive offers. Don't miss out on the chance to enjoy special discounts and member-only promotions.</p>
+ <marquee>
+  <p class="lead display-6">Sign up now and treat yourself to the perks of being an Instant Pizza member <i class="bi bi-hand-thumbs-up-fill"></i></p>
+ </marquee>
+  <button class=" mx-3 btn btn-outline-danger btn-lg text-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"> Sign up</button>
+</div>
+</header>
 
-  <!--adding a toast so it can pop up when refreshed-->
-  <div class="container-fluid mb-4 mt-2 d-flex justify-content-center align-items-center pop-up">
-    <div class="toast show fade" style="max-width: 90vw; width:70%">
-      <div class="toast-header">
-        <h5 class="me-auto fw-bold text-uppercase" style="color: #d52020">
-          <strong><i class="bi bi-cash-coin fs-2"></i> Sign up and earn a
-            reward</strong>
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+<!--offcanvas for sign up button-->
+<div class="container">
+  <div class="offcanvas  offcanvas-start" data-bs-scroll="true" data-bs-backdrop="static" id="offcanvas">
+<div class="offcanvas-header">
+  <h3 class="offcanvas-title"> Please Sign up and start earning rewards </h3>
+  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+</div>
+<div class="offcanvas-body">
+  <p> Did you know you that Instant Pizza celebrate your birthday with a special gift
+    What are you waiting for sign up today and get exclusive discount and deals... 
+  </p>
+
+  <!--input form beings here-->
+  <div class="container">
+    <div class="mb-5">
+    <img src="Photos/default.png" class="img-fluid rounded-circle" width="55" alt="img logo" />
+        <strong>Instant Pizza</strong>
+    </div>
+        <div>
+<form>
+    <!--First name input-->
+  <div class="form-floating mb-3 mt-3">
+    <input type="text" class="form-control" id="fname" placeholder="First Name">
+    <label for="fname" class="form-label"> First Name </label>
+  </div>
+
+    <!--Last name input-->
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="lname" placeholder="First Name">
+    <label for="lname" class="form-label"> Last Name </label>
+  </div>
+
+    <!--Password input-->
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" id="password" placeholder="First Name">
+    <label for="password" class="form-label"> Password </label>
+  </div>
+  
+    <!--Verify input-->
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" id="vpsw" placeholder="First Name">
+    <label for="vpsw" class="form-label"> Verify Password </label>
+  </div>
+  <!--phone input-->
+<div class="form-floating mb-3">
+  <input type="tel" class="form-control" id="phone" placeholder="Phone">
+  <button type="button" class="btn btn-link position-absolute end-0 top-50 translate-middle-y border-0 bg-transparent">
+    <i class="bi bi-question-circle-fill fs-4" data-bs-toggle="modal" data-bs-target="#phone-policy"></i>
+  </button>
+  <label for="phone" class="form-label"> Phone </label>
+</div>
+
+  <!--Email input-->
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="email" placeholder="Email (optional)">
+    <label for="email" class="form-label"> Email </label>
+  </div>
+  <!--button to submit it-->
+<div>
+  <input type="checkbox" class="form-check-input" id="tc">
+  <label class="form-check-label" for="tc"> I agree to the Terms and Conditions </label>
+</div>
+
+<div class="container mt-3">
+  <button type="submit" class="btn btn-danger w-100"> Sign up </button>
+  <small class="mt-4">Already have an account? <a href="login.html"> login</a></small>
+</div>
+
+</form>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+
+<!--Phone number policy modal-->
+<div class="modal fade" data-bs-backdrop="static" id="phone-policy">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down">
+    <div class="modal-content">
+      <div class="modal-header text-dark">
+        <h6 class="modal-title text-uppercase fw-bold text-center"> Privacy policy </h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
-      <div class="toast-body">
-        <p class="text lead text-dark" style="font-size: 20px">
-          Join the Instant Pizza membership today and start earning delicious
-          rewards! With every order, you'll accumulate loyalty points that can
-          be redeemed for free pizzas and exclusive offers. Don't miss out on
-          the chance to enjoy special discounts and member-only promotions.
-          Sign up now and treat yourself to the perks of being an Instant
-          Pizza member!
+      <div class="modal-body text-dark">
+        <p>
+          We use your phone to send you a tracking number for your order Your privacy is our top priority, at instant pizza our goal is to make sure our customer data and information are safe and secured and we don't send your data to a third parties thank you
         </p>
-        <div class="img-container">
-          <img src="Photos/stock-photo-woman-eating-pizza-in-cafe.jpeg" class="pop-up-img" alt="woman-eating-pizza" />
-        </div>
-        <div class="my-3">
-          <button type="button" class="btn btn-lg btn-dark" data-bs-toggle="offcanvas"
-            data-bs-target="#signup-offcanvas">Sign up</button>
-        </div>
-
-        <!--offcanvas for sign up (inside the toast body)-->
-        <div class="offcanvas offcanvas-start" id="signup-offcanvas">
-          <div class="offcanvas-header">
-            <h4 class="offcanvas-title"> Please Sign up and start earning rewards </h4>
-            <button type="button" class="btn btn-close" data-bs-dismiss="offcanvas"></button>
-          </div>
-          <div class="offcanvas-body">
-            <p style="font-size: 20px;"> Did you know you that <span class="instant-logo"> Instant Pizza </span>
-              celebrate your birthday with a special gift <br> What are you waiting for sign up today and get exclusive
-              discount and deals... </p>
-            <!--sign up form for the offcanvas-->
-            <div class="container mt-5">
-              <form>
-                <div class="form-floating was-validated">
-                  <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname" value=""
-                    required>
-                  <label for="fname" class="form-label" style="font-size: 16px;"> First Name </label>
-                  <div class="valid-feedback"> Thank you </div>
-                  <div class="invalid-feedback"> Please enter your first name </div>
-                </div>
-
-                <div class="form-floating was-validated">
-                  <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" value=""
-                    required>
-                  <label for="lname" class="form-label" style="font-size: 16px;"> Last Name </label>
-                  <div class="valid-feedback"> Thank you again </div>
-                  <div class="invalid-feedback"> Please enter your last name </div>
-                </div>
-
-                <div class="form-floating was-validated">
-                  <input type="password" class="form-control" placeholder="Password" id="pwd" name="pwd" value=""
-                    required>
-                  <label for="pwd" class="form-label" style="font-size: 16px;"> Password </label>
-                  <div class="valid-feedback"> Good Password </div>
-                  <div class="invalid-feedback"> Please create a password </div>
-                </div>
-
-                <div class="form-floating was-validated">
-                  <input type="password" class="form-control" placeholder="Password" id="pwd2" name="pwd" value=""
-                    required>
-                  <label for="pwd2" class="form-label" style="font-size: 16px;"> Verify Password </label>
-                  <div class="valid-feedback"> Awesome</div>
-                  <div class="invalid-feedback"> Please Enter the password again </div>
-                </div>
-
-                <div class="form-floating was-validated mb-3">
-                  <input type="tel" class="form-control" placeholder="Phone" id="phone" name="pwd" value="" required>
-                  <label for="phone" class="form-label" style="font-size: 16px;"> Phone </label>
-                  <small class=" my-3" data-bs-target="#myModal" data-bs-toggle="modal" style="font-size: 18px;"> Why <i
-                      class="bi bi-question-octagon-fill"></i></small>
-                  <div class="modal fade" id="myModal">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h6 class="modal-title me-auto"> Phone policy </h6>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body">
-                          <p> We use your phone to send you a tracking number for your order
-                            Your privacy is our top priority, at instant pizza our goal is to make
-                            sure our customer data and information are safe and secured and we don't send your data
-                            to a third parties thank you</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-dark" data-bs-dismiss="modal"> Got it </button>
-                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Close </button>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="valid-feedback"> Gracias </div>
-                  <div class="invalid-feedback"> Please enter your phone number </div>
-                </div>
-
-                <div class="form-floating ">
-                  <input type="email" class="form-control" placeholder="Email" id="email" name="email" value="">
-                  <label for="email" class="form-label" style="font-size: 16px;"> Email (optional) </label>
-                </div>
-
-                <div class="form-floating was-validated">
-                  <div class="form-check my-3">
-                    <input type="checkbox" class="form-check-input" id="TC" name="TC" value="" required>
-                    <label for="TC" class="form-check-label"> I agree to the Terms and Conditions </label>
-                  </div>
-                </div>
-                <div class="my-2">
-                  <small> Already have an account login below </small>
-                </div>
-                <div class="d-grid">
-                  <button type="submit" class="btn btn-danger btn-block mt-3"> Sign up </button>
-                  <p style="font-size: 15px;" class="mt-2"> Already have an account? <a href="login.html"
-                      class="text-decoration-none"> login </a></p>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark"  data-bs-dismiss="modal"> Okay </button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Close </button>
       </div>
     </div>
   </div>
+</div>
+
   <!--navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: rgb(33,37,41);">
     <div class="container-fluid">
@@ -245,11 +224,11 @@
   </nav>
 
   <!--landing page-->
-  <div class="container-fluid mt-5 position-relative" id="home">
-    <div class="row g-0">
+  <div class="cover-container d-flex w-100 h-100 mx-auto p-5 my-auto flex-column position-relative" id="home">
+    <div class="row mb-auto">
       <div class="col">
         <div class="bg-image position-absolute w-100 h-100 start-0 top-0" style="
-              background-image: url(Photos/stock-photo-fresh-italian-vegetarian-pizza-on-wooden-table.jpeg);
+              background-image: url(Photos/background-img.jpg);
               background-size: cover;
               background-position: center;
             "></div>
@@ -271,7 +250,7 @@
   </div>
 
   <!--jumbotron-->
-  <div class="jumbotron p-5 mt-4 bg-dark text-white">
+  <div class="jumbotron p-4 mt-auto mb-auto bg-dark text-white">
     <h2>Join Our Pizza Lovers Community!</h2>
     <p>
       Sign up for our newsletter to receive exclusive offers, updates on new
