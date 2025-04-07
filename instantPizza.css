@@ -1,6 +1,19 @@
+/* testimonia card */
 .card:hover {
-  background-color: #f1ecec;
+  background-color: #ff3d3d;
+  color:white;
+  border-radius: 20px;
+  padding:10px;
 }
+.card h3{
+  text-transform: capitalize;
+}
+
+.card h3:hover{
+  text-decoration: underline solid 2px #ff3d3d;;
+}
+
+
 
 .is-featured {
   background-color: #e31b1b;
