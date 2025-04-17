@@ -136,7 +136,7 @@
     <div class="container-fluid">
       <a href="index.html" class="navbar-brand">
         <img src="Photos/default.png" class="img-fluid rounded-circle" width="55" alt="img logo" />
-        <strong>Instant Pizza<a href="instantPizza.html"></a></strong>
+        <strong class="instant-logo" >Instant Pizza<a href="instantPizza.html"></a></strong>
       </a>
       <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsing" class="navbar-toggler">
         <span class="navbar-toggler-icon"></span>
@@ -224,17 +224,17 @@
   </nav>
 
   <!--landing page-->
-  <div class="cover-container d-flex w-100 h-100 mx-auto p-5 my-auto flex-column position-relative" id="home">
+  <div class="landingPage-cta d-flex w-100 min-vh-100 mx-auto p-5 my-auto flex-column position-relative" id="home">
     <div class="row mb-auto">
       <div class="col">
-        <div class="bg-image position-absolute w-100 h-100 start-0 top-0" style="
+        <div class="bg-image position-absolute w-100 h-100 start-0 top-0 justify-content-center align-items-center" style="
               background-image: url(Photos/background-img.jpg);
               background-size: cover;
-              background-position: center;
-            "></div>
+              background-position: center;">
+            </div>
 
-        <div class="text-center d-flex flex-column justify-content-center align-items-center p-4 position-relative">
-          <h4 class="display-1 text-white">Welcome to Instant Pizza</h4>
+        <div class=" min-vh-100  text-center d-flex flex-column justify-content-center align-items-center p-4 position-relative">
+          <h4 class="display-1 text-white fw-bold">Welcome to <span>Instant Pizza </span></h4>
           <p class="lead text-white">
             Craving delicious, hot pizza delivered straight to your door? Look
             no further! At Instant Pizza, we pride ourselves on serving the
@@ -356,7 +356,7 @@
     <div class="carousel slide my-4" id="testimonials" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="card">
+          <div class="card testimonial-card"> 
             <div class="card-header text-center">
               <h3 style="font-weight: bolder;"> Family Gatherings </h3>
             </div>
