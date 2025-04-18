@@ -51,18 +51,11 @@ body {
 
 /* Background image styles */
 .bg-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(Photos/landingPage-img.png);
-  background-size: cover;
-  background-position: center;
-  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Photos/landingPage-img.png') center/cover no-repeat;
   width: 100%;
   height: 100%;
-  left: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
 
 /* the car image */
 .logo-img{
@@ -79,15 +72,13 @@ body {
   }  /* The marquee will remain visible */
 }
 
-/* remove the background landing page image */
+/* remove the background landing page image on a smaller screen*/
 @media screen and (max-width: 767px) {
   .bg-image {
-    background-image: none;
-    background-color: black;
+    background-image: none !important;
+    background-color: black !important;
   }
 }
-
-
  /* for the navbar to align in the middle */
 @media screen and (max-width: 912px){
   nav ul {
@@ -99,3 +90,4 @@ body {
   }
   
 }
+
