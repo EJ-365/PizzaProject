@@ -1,4 +1,6 @@
-
+body{
+  font-family: "Titillium Web", sans-serif;
+  }  
 
 /* navbar ul (everything on the navbar ul like navigation; home, menu , track order etc */
 nav ul {
@@ -21,11 +23,7 @@ nav ul {
 }
 
 
-/* the logo name */
-.instant-logo {
-  text-transform: capitalize;
- 
-}
+
 
 /*google fonts*/
 
@@ -51,8 +49,26 @@ body {
  border:none;
 }
 
+/* Background image styles */
+.bg-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(Photos/landingPage-img.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* the car image */
+.logo-img{
+ width: 70px;
 
+}
 
 /* Responsiveness on smaller devices */
 
@@ -63,9 +79,16 @@ body {
   }  /* The marquee will remain visible */
 }
 
+/* remove the background landing page image */
+@media screen and (max-width: 480px) {
+  .bg-image {
+    background-image: none;
+    background-color: black;
+  }
+}
 
+ 
 @media screen and (max-width: 912px){
-  
   nav ul {
     display: flex;
     justify-content: center;

@@ -8,6 +8,7 @@
     overflow-x: hidden;
     min-width:100vw;
     min-height: 100vh;
+    font-family: "Titillium Web", sans-serif;
   }
   .membership{
     margin-top: 70px;
