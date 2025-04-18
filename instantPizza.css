@@ -7,7 +7,17 @@ body{
 
 /* navbar ul (everything on the navbar ul like navigation; home, menu , track order etc */
 nav ul {
-  font-size: 15px;
+  font-size: 14px;
+}
+
+/* navbar anchor <a> tage links */
+.navbar ul li a{
+   text-transform: uppercase;
+   font-size: 13px;
+}
+.navbar ul li a:hover {
+  color: #ff3d3d;
+  text-decoration:underline solid white 1px ;
 }
 /* testimonial card */
 .testimonial-card:hover {
@@ -82,6 +92,30 @@ nav ul {
     align-content: center;
     padding-bottom: 20px;
   }
-  
+  /* fixing the smaller device screen width */
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
 }
 
+/* adding responsive column to the footer section on smaller screen devices */
+  @media screen and (max-width: 1024px) {
+      .footer-section{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          margin: 10px;
+          text-align: center;
+          width: 100%;
+      }
+    
+      .footer-section * {
+          width: 100%;
+          max-width: 300px;
+      }
+  }
