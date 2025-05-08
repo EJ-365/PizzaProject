@@ -16,25 +16,42 @@ nav ul {
    font-size: 13px;
 }
 .navbar ul li a:hover {
-  color: #ff3d3d;
+  color: #f80c0c;
   text-decoration:underline solid white 1px ;
 }
+
+/* testimonial */
+.testimonial{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
 /* testimonial card */
-.testimonial-card:hover {
-  background-color: #ff3d3d;
-  color:white;
-  border-radius: 20px;
-  padding:10px;
+.testimonial-card{
+ border-radius: 20px;
+ padding:15px;
 }
 .testimonial-card h3{
   text-transform: capitalize;
 }
 
+/* testimonial card on hover */
+.testimonial-card:hover{
+  background-color: #f80c0c;
+  color:white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* Testimonial card header */
+.card-header,.card-footer{
+  background:none;
+  border:none;
+}
 /* dropdown for the <a> tag navbar navigation on hover */
 .dropdown li a:hover {
   color: #f80c0c;
 }
-
 
 
 /* updating images for the pizza carousel */
@@ -49,7 +66,7 @@ nav ul {
 /* dark mode icon on the top navbar */
 .darkMode {
   border-radius: 50%;
- background-color: #ff3d3d;
+ background-color: #f80c0c;
  border:none;
 }
 
