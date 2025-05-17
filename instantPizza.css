@@ -5,15 +5,23 @@ body{
   max-height: 100vh;
   }  
 
-/* navbar ul (everything on the navbar ul like navigation; home, menu , track order etc */
-nav ul {
-  font-size: 14px;
-}
+/* for the main navbar (the first one ) */
+ .main-navbar  {
+border-bottom: 2px solid white;
+ }
 
-/* navbar anchor <a> tage links */
+ /* bootstrap icon (bi)  styling for the nav links */
+ .bi {
+  font-size: 20px;
+ }
+
+
+/* navbar anchor <a> tag links */
 .navbar ul li a{
    text-transform: uppercase;
-   font-size: 13px;
+   font-size: 14px;
+     text-align: center;
+  margin: 0 15px;
 }
 .navbar ul li a:hover {
   color: #f80c0c;
