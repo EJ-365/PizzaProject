@@ -1,0 +1,152 @@
+ Sign up and earn a reward
+
+
+Join the Instant Pizza membership today and start earning delicious rewards! With every order, you'll accumulate loyalty points that can be redeemed for free pizzas and 
+
+exclusive offers. Don't miss out on the chance to enjoy special discounts and member-only promotions.
+
+
+
+
+<!--offcanvas for sign up button-->
+<div class="container">
+  <div class="offcanvas  offcanvas-start" data-bs-scroll="true" data-bs-backdrop="static" id="offcanvas">
+<div class="offcanvas-header">
+  <h3 class="offcanvas-title"> Please Sign up and start earning rewards </h3>
+  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+</div>
+<div class="offcanvas-body">
+  <p> Did you know you that Instant Pizza celebrate your birthday with a special gift
+    What are you waiting for sign up today and get exclusive discount and deals... 
+  </p>
+
+  <!--input form beings here-->
+  <div class="container">
+    <div class="mb-5">
+    <img src="Photos/Logo.png" class="img-fluid rounded-circle" width="55" alt="img logo" />
+        <strong>Instant Pizza</strong>
+    </div>
+        <div>
+<form>
+    <!--First name input-->
+  <div class="form-floating mb-3 mt-3">
+    <input type="text" class="form-control" id="fname" placeholder="First Name">
+    <label for="fname" class="form-label"> First Name </label>
+  </div>
+
+    <!--Last name input-->
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="lname" placeholder="First Name">
+    <label for="lname" class="form-label"> Last Name </label>
+  </div>
+
+    <!--Password input-->
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" id="password" placeholder="First Name">
+    <label for="password" class="form-label"> Password </label>
+  </div>
+  
+    <!--Verify input-->
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" id="vpsw" placeholder="First Name">
+    <label for="vpsw" class="form-label"> Verify Password </label>
+  </div>
+  <!--phone input-->
+<div class="form-floating mb-3">
+  <input type="tel" class="form-control" id="phone" placeholder="Phone">
+  <button type="button" class="btn btn-link position-absolute end-0 top-50 translate-middle-y border-0 bg-transparent">
+    <i class="bi bi-question-circle-fill fs-4" data-bs-toggle="modal" data-bs-target="#phone-policy"></i>
+  </button>
+  <label for="phone" class="form-label"> Phone </label>
+</div>
+
+  <!--Email input-->
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="email" placeholder="Email (optional)">
+    <label for="email" class="form-label"> Email </label>
+  </div>
+  <!--button to submit it-->
+<div>
+  <input type="checkbox" class="form-check-input" id="tc">
+  <label class="form-check-label" for="tc"> I agree to the Terms and Conditions </label>
+</div>
+
+<div class="container mt-3">
+  <button type="submit" class="btn btn-danger w-100"> Sign up </button>
+  <small class="mt-4">Already have an account? <a href="login.html"> login</a></small>
+</div>
+
+</form>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+
+nav bar tab for deals
+     <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-currency-dollar"></i>
+              Deals</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item">25% Off Menu Price</a></li>
+              <li><a href="#" class="dropdown-item disabled">Halloween deal</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <h6 class="dropdown-header"><strong>Upcoming deals</strong></h6>
+              </li>
+              <li><a href="#" class="dropdown-item">Christmas deal</a></li>
+              <li><a href="#" class="dropdown-item">Thanksgiving deals</a></li>
+            </ul>
+          </li>
+
+
+Navbar for settings
+
+     <li class="nav-item dropdown">
+            <a href="#settings" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                class="bi bi-gear-fill"></i> Settings</a>
+            <ul class="dropdown-menu">
+              <li><a href="#pizza" class="dropdown-item">Profile</a></li>
+              <li><a href="login.html" class="dropdown-item">Login</a></li>
+              <li><a href="#" class="dropdown-item">Sign up</a></li>
+              <li><a href="#" class="dropdown-item">Instant rewards</a></li>
+              <li><a href="#" class="dropdown-item">Contact us</a></li>
+              <li><a href="#" class="dropdown-item">Help</a></li>
+            </ul>
+          </li>
+          
+
+          navbar form
+                    <!-- <form class="d-flex">
+            <div class="input-group">
+              <input type="search" class="form-control" id="search" placeholder="Search your fav....">
+              <button class="btn btn-danger" type="submit">Search</button>
+            </div>
+          </form> -->
+
+
+          navbar for menu
+
+           <!-- <li class="nav-item dropdown">
+            <a href="#menu" data-bs-toggle="dropdown" class="nav-link dropdown-toggle"><i
+                class="bi bi-menu-button-wide"></i> Menu</a>
+            <ul class="dropdown-menu">
+              <li><a href="pizzaMenu.html" class="dropdown-item active">Pizza</a></li>
+              <li><a href="#" class="dropdown-item">Sandwiches</a></li>
+              <li><a href="#" class="dropdown-item">Wings</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <h6 class="dropdown-header"><b>Deserts</b></h6>
+              </li>
+              <li><a href="#" class="dropdown-item">Cookies</a></li>
+              <li><a href="#" class="dropdown-item">Brownies</a></li>
+              <li><a href="#" class="dropdown-item">Drinks</a></li>
+            </ul>
+          </li> -->
