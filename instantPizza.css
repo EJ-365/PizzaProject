@@ -87,47 +87,27 @@ input{
   border-radius: 50%;
   background-color: black;
   font-size: 60px;
+  margin: auto 20px;
 }
 
 /* selecting all the text inside the carousel inner */
 .carousel-inner h3,p{
   font-size: 22px;
 }
-/* testimonial */
-.testimonial{
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
 
 /* testimonial card */
+.card-footer {
+  margin-bottom: 50px;
+  height: auto;
+  background-color: black;
+
+}
+
 .testimonial-card{
- border-radius: 20px;
- padding:15px;
-}
-.testimonial-card h3{
-  text-transform: capitalize;
-}
-
-/* testimonial card on hover */
-.testimonial-card:hover{
-  background-color: #f80c0c;
-  color:white;
-  cursor: pointer;
-  border-radius: 20px;
-}
-
-/* Testimonial card header */
-.card-header,.card-footer{
-  background:none;
+  height: 430px;
   border:none;
-}
-
-/* updating images for the pizza carousel */
-.d-block {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  background-color: #D9D9D9;
+  margin:20px auto;
 }
 
 

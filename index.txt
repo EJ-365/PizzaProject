@@ -152,3 +152,86 @@ Navbar for settings
           </li> -->
 
           
+
+Testimonial
+          
+          <div class="container testimonial">
+    <h2 class="display-4  text-center"> Testimonials </h2>
+    <p class="text-center lead"> Here from our valued customers and pizza lovers... </p>
+    <div class="carousel slide my-4" id="testimonials" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card testimonial-card"> 
+            <div class="card-header text-center">
+              <h3 style="font-weight: bolder;"> Family Gatherings </h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text lead"> "The Family Favorite pizza is a game-changer! It's always a hit at our family
+                gatherings. The crust is perfectly crispy, and the toppings are fresh and flavorful. We can't get
+                enough!"</p>
+            </div>
+            <div class="card-footer text-reset text-center">
+              <small style="font-size: 18px; font-weight: 400;" class="text-center"><em class="text-center"> Williams L. Austin</em> <img src="Photos/man-on-green.jpg" alt=""
+                  class=" rounded-circle me-auto img-fluid  d-sm-inline-block" width="60px" style="border-radius: 50%;">
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <div class="card testimonial-card">
+            <div class="card-header text-center">
+              <h3 style="font-weight: bolder;"> Pizza Night Champion </h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text lead"> "Instant Pizza has quickly become our go-to for pizza nights! The Family
+                Favorite is loaded with all the right toppings, and my kids love it. It's great to see them enjoy a meal
+                together!"</p>
+            </div>
+            <div class="card-footer text-reset text-center">
+              <small style="font-size: 18px; font-weight: 400;" class="text-center"><em class="text-center"> David M. </em> <img
+                  src="Photos/man-on-suit.jpg" alt="" class=" rounded-circle me-auto img-fluid  d-sm-inline-block"
+                  width="60px" style="border-radius: 50%;">
+                 </small>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <div class="card testimonial-card">
+            <div class="card-header text-center">
+              <h3 style="font-weight: bolder;"> Pizza Lover </h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text lead"> "The Family Favorite is my absolute favorite pizza! It's perfect for sharing,
+                and the quality is unbeatable. Instant Pizza never disappoints—highly recommend!"</p>
+            </div>
+            <div class="card-footer text-reset text-center">
+              <small style="font-size: 18px; font-weight: 400;" class="text-center"><em class="text-center"> Ejay E. Gabriel. </em><img
+                  src="Photos/Man-wearing-shirt.jpg" alt="" class=" rounded-circle me-auto img-fluid  d-sm-inline-block"
+                  width="60px" style="border-radius: 50%;"> </small>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card testimonial-card">
+            <div class="card-header text-center">
+              <h3 style="font-weight: bolder;"> Busy Dad </h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text lead"> "I was blown away by The Family Favorite! The combination of flavors is
+                incredible, and it's huge enough to feed our whole family. We always look forward to ordering from
+                Instant Pizza!" </p>
+            </div>
+            <div class="card-footer text-center mb-5">
+              <small style="font-size: 18px; font-weight: 400;" class="text-center"><em text-center> James C. Wright  </em><img
+                  src="Photos/man-with-dread-wearing-shirt.jpg"
+                  class="me-auto d-sm-inline-block me-auto rounded-circle img-fluid" width="60px"
+                  style="border-radius: 50%;" alt=""> </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
