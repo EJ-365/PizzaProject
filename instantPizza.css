@@ -50,6 +50,32 @@ input{
   text-align: center;
   text-transform: uppercase;
 }
+
+
+/* for the text inside the welcome page paragraph */
+
+.welcome-page-paragraph{
+  background-color: rgba(0, 0, 0, 0.301);
+  padding: 50px;
+  margin-top:50px;
+  height:auto;
+  text-align: start;
+
+}
+
+/* cta === jumbotron */
+.jumbotron {
+  padding: 40px;
+   height: 300px;
+}
+
+.jumbotron h2 {
+   margin-top: 60px;
+   margin-bottom: 30px;
+}
+.jumbotron p, h2 {
+  margin-left: 90px;
+}
 /* testimonial */
 .testimonial{
   margin-top: 10%;
