@@ -117,9 +117,24 @@
     </button>
   <div class="navbar-collapse collapse" id="collapse2">
     <ul class="navbar-nav me-auto mt-3">
-      <li class="nav-item">
-        <a href="#" class="nav-link">Menu</a>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Menu</a>
+           <ul class="dropdown-menu">
+              <li><a href="pizzaMenu.html" class="dropdown-item">Pizza</a></li>
+              <li><a href="#" class="dropdown-item">Sandwiches</a></li>
+              <li><a href="#" class="dropdown-item">Wings</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <h6 class="dropdown-header"><b>Deserts</b></h6>
+              </li>
+              <li><a href="#" class="dropdown-item">Cookies</a></li>
+              <li><a href="#" class="dropdown-item">Brownies</a></li>
+              <li><a href="#" class="dropdown-item">Drinks</a></li>
+            </ul>
       </li>
+
        <li class="nav-item">
         <a href="#" class="nav-link">deals</a>
       </li>
@@ -175,9 +190,85 @@
 exclusive offers. Don't miss out on the chance to enjoy special discounts <br> and member-only promotions.
     </p>
      <div class="text-start">
-    <button type="button" class="btn btn-lg text-white" style="background-color: #d10000; margin-left: 90px; width:150px"><i class="bi bi-arrow-up-right me-2"></i> sign up </button>
+    <button type="button" data-bs-target="#offcanvas" data-bs-toggle="offcanvas"  class="btn btn-lg text-white" style="background-color: #d10000; margin-left: 90px; width:150px"><i class="bi bi-arrow-up-right me-2"></i> sign up </button>
     </div>
   </div>
+
+
+  <!--offcanvas for quick sign up-->
+<div class="container">
+  <div class="offcanvas  offcanvas-start" data-bs-scroll="true" data-bs-backdrop="static" id="offcanvas">
+<div class="offcanvas-header">
+  <h3 class="offcanvas-title"> Please Sign up and start earning rewards </h3>
+  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+</div>
+<div class="offcanvas-body">
+  <p> Did you know you that Instant Pizza celebrate your birthday with a special gift
+    What are you waiting for sign up today and get exclusive discount and deals... 
+  </p>
+
+  <!--input form beings here-->
+  <div class="container">
+    <div class="mb-5">
+    <img src="Photos/Logo.png" class="img-fluid rounded-circle" width="55" alt="img logo" />
+        <strong>Instant Pizza</strong>
+    </div>
+        <div>
+<form>
+    <!--First name input-->
+  <div class="form-floating mb-3 mt-3">
+    <input type="text" class="form-control" id="fname" placeholder="First Name">
+    <label for="fname" class="form-label"> First Name </label>
+  </div>
+
+    <!--Last name input-->
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="lname" placeholder="First Name">
+    <label for="lname" class="form-label"> Last Name </label>
+  </div>
+
+    <!--Password input-->
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" id="password" placeholder="First Name">
+    <label for="password" class="form-label"> Password </label>
+  </div>
+  
+    <!--Verify input-->
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" id="vpsw" placeholder="First Name">
+    <label for="vpsw" class="form-label"> Verify Password </label>
+  </div>
+  <!--phone input-->
+<div class="form-floating mb-3">
+  <input type="tel" class="form-control" id="phone" placeholder="Phone">
+  <button type="button" class="btn btn-link position-absolute end-0 top-50 translate-middle-y border-0 bg-transparent">
+    <i class="bi bi-question-circle-fill fs-4" data-bs-toggle="modal" data-bs-target="#phone-policy"></i>
+  </button>
+  <label for="phone" class="form-label"> Phone </label>
+</div>
+
+  <!--Email input-->
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="email" placeholder="Email (optional)">
+    <label for="email" class="form-label"> Email </label>
+  </div>
+  <!--button to submit it-->
+<div>
+  <input type="checkbox" class="form-check-input" id="tc">
+  <label class="form-check-label" for="tc"> I agree to the Terms and Conditions </label>
+</div>
+
+<div class="container mt-3">
+  <button type="submit" class="btn btn-danger w-100"> Sign up </button>
+  <small class="mt-4">Already have an account? <a href="login.html"> login</a></small>
+</div>
+
+</form>
+</div>
+  </div>
+</div>
+  </div>
+</div>
 
   <!--membership-->
    <!--membership plan card
@@ -206,7 +297,7 @@ exclusive offers. Don't miss out on the chance to enjoy special discounts <br> a
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="Photos/newPizza-img1.jpg" class="mx-auto d-flex" width="500px"   alt="people-eating-pizza">
+          <img src="Photos/pizza3-removebg-preview.png" class="mx-auto d-flex" width="500px"   alt="people-eating-pizza">
          <div style="margin-top:300px;">
           <div class="carousel-caption text-dark">
             <h3> Family Pizza </h3>
@@ -219,7 +310,7 @@ exclusive offers. Don't miss out on the chance to enjoy special discounts <br> a
         </div>
 
         <div class="carousel-item">
-          <img src="Photos/newPizza-img2.jpg" alt="" class="d-flex mx-auto" width="500px">
+          <img src="Photos/pizza3-removebg-preview.png" alt="" class="d-flex mx-auto" width="500px">
           <div style="margin-top:300px;">
           <div class="carousel-caption text-dark">
             <h3> Title </h3>
@@ -230,7 +321,7 @@ exclusive offers. Don't miss out on the chance to enjoy special discounts <br> a
         </div>
 
         <div class="carousel-item text-dark">
-          <img src="Photos/newPizza-img3.jpg" alt="" class="d-flex mx-auto" width="500px">
+          <img src="Photos/Pizza1.png" alt="" class="d-flex mx-auto" width="500px">
           <div style="margin-top:300px;">
           <div class="carousel-caption text-dark">
             <h3> Title </h3>
@@ -276,7 +367,7 @@ exclusive offers. Don't miss out on the chance to enjoy special discounts <br> a
 <!--note that there's additional css class those ones for styling purposes to customize our own style they are not from bootstrap-->
 
   <!--testimonials-->
-  <div class="container">
+  <div class="container" style="margin-top: 200px;">
      <h2 class="display-4  text-center"> Testimonials </h2>
      <p class="text-center lead"> Here from our valued customers and pizza lovers... </p>
   </div>
@@ -382,12 +473,12 @@ exclusive offers. Don't miss out on the chance to enjoy special discounts <br> a
 
   
   <!--accordion-->
-  <div class="container-fluid mt-5 mb-5 bg-dark p-4" id="faq">
-    <h1 class="text-danger text-center"> FAQ </h1>
+  <div class="container-fluid mt-5 mb-5 bg-dark p-4 accordion-container" id="faq">
+    <h1 class="text-white text-center"> FAQ </h1>
     <div id="accordion">
       <div class="card bg-dark text-white">
         <ul class="list-group list-group-flush">
-          <a href="#faq1" class="list-group-item list-group-item-action active fs-3 bg-danger text-white"
+          <a href="#faq1" class="list-group-item list-group-item-action fs-4 active bg-dark text-white"
             data-bs-toggle="collapse"> What is Instant Pizza? </a>
         </ul>
         <div class="collapse show" id="faq1" data-bs-parent="#accordion">
@@ -399,9 +490,9 @@ exclusive offers. Don't miss out on the chance to enjoy special discounts <br> a
       </div>
 
       <!--faq2-->
-      <div class="card bg-danger text-white">
+      <div class="card bg-dark text-white">
         <ul class="list-group list-group-flush">
-          <a href="#faq2" class="list-group-item list-group-item-action active fs-3 bg-dark text-white"
+          <a href="#faq2" class="list-group-item list-group-item-action active fs-4 bg-dark text-white"
             data-bs-toggle="collapse"> How do I prepare the pizzas? </a>
         </ul>
         <div class="collapse" id="faq2" data-bs-parent="#accordion">
@@ -416,7 +507,7 @@ exclusive offers. Don't miss out on the chance to enjoy special discounts <br> a
       <!--faq3-->
       <div class="card bg-dark text-white">
         <ul class="list-group list-group-flush">
-          <a href="#faq3" class="list-group-item list-group-item-action active fs-3 bg-danger text-white"
+          <a href="#faq3" class="list-group-item list-group-item-action active fs-4 bg-dark text-white"
             data-bs-toggle="collapse"> What types of pizzas do you offer? </a>
         </ul>
         <div class="collapse" id="faq3" data-bs-parent="#accordion">
@@ -428,9 +519,9 @@ exclusive offers. Don't miss out on the chance to enjoy special discounts <br> a
       </div>
 
       <!--faq4-->
-      <div class="card bg-danger text-white">
-        <ul class="list-group list-group">
-          <a href="#faq4" class="list-group-item list-group-item-action  fs-3 bg-dark text-white"
+      <div class="card bg-dark text-white">
+        <ul class="list-group list-group-flush">
+          <a href="#faq4"  class="list-group-item list-group-item-action active fs-4 bg-dark text-white"
             data-bs-toggle="collapse"> Are your pizzas suitable for dietary restrictions? </a>
         </ul>
         <div class="collapse" id="faq4" data-bs-parent="#accordion">
@@ -444,8 +535,8 @@ exclusive offers. Don't miss out on the chance to enjoy special discounts <br> a
 
       <!--faq5-->
       <div class="card bg-dark text-white">
-        <ul class="list-group list-group">
-          <a href="#faq5" class="list-group-item list-group-item-action  fs-3 bg-danger text-white"
+        <ul class="list-group list-group-flush">
+          <a href="#faq5" class="list-group-item list-group-item-action fs-4 bg-dark text-white"
             data-bs-toggle="collapse"> Where can I buy Instant Pizza?</a>
         </ul>
         <div class="collapse" id="faq5" data-bs-parent="#accordion">
@@ -457,9 +548,9 @@ exclusive offers. Don't miss out on the chance to enjoy special discounts <br> a
       </div>
 
       <!--faq6-->
-      <div class="card bg-danger text-white">
-        <ul class="list-group list-group">
-          <a href="#faq6" class="list-group-item list-group-item-action  fs-3 bg-dark text-white"
+      <div class="card bg-dark text-white">
+        <ul class="list-group list-group-flush">
+          <a href="#faq6" class="list-group-item list-group-item-action fs-4 bg-dark text-white"
             data-bs-toggle="collapse"> How should I store the pizzas?</a>
         </ul>
         <div class="collapse" id="faq6" data-bs-parent="#accordion">
@@ -473,8 +564,8 @@ exclusive offers. Don't miss out on the chance to enjoy special discounts <br> a
 
       <!--faq7-->
       <div class="card bg-dark text-white">
-        <ul class="list-group list-group">
-          <a href="#faq7" class="list-group-item list-group-item-action  fs-3 bg-danger text-white"
+        <ul class="list-group list-group-flush">
+          <a href="#faq7" class="list-group-item list-group-item-action fs-4 bg-dark text-white"
             data-bs-toggle="collapse"> What is your return policy?</a>
         </ul>
         <div class="collapse" id="faq7" data-bs-parent="#accordion">
@@ -487,9 +578,9 @@ exclusive offers. Don't miss out on the chance to enjoy special discounts <br> a
 
 
       <!--faq8-->
-      <div class="card bg-danger text-white">
-        <ul class="list-group list-group">
-          <a href="#faq8" class="list-group-item list-group-item-action  fs-3 bg-dark text-white"
+      <div class="card bg-dark text-white">
+        <ul class="list-group list-group-flush">
+          <a href="#faq8" class="list-group-item list-group-item-action fs-4 bg-dark text-white"
             data-bs-toggle="collapse"> Do you offer bulk orders for events?</a>
         </ul>
         <div class="collapse" id="faq8" data-bs-parent="#accordion">
@@ -504,8 +595,8 @@ exclusive offers. Don't miss out on the chance to enjoy special discounts <br> a
 
       <!--faq9-->
       <div class="card bg-dark text-white">
-        <ul class="list-group list-group">
-          <a href="#faq9" class="list-group-item list-group-item-action  fs-3 bg-danger text-white"
+        <ul class="list-group list-group-flush">
+          <a href="#faq9" class="list-group-item list-group-item-action fs-4 bg-dark text-white"
             data-bs-toggle="collapse"> Can I customize my pizza?</a>
         </ul>
         <div class="collapse" id="faq9" data-bs-parent="#accordion">
@@ -517,9 +608,9 @@ exclusive offers. Don't miss out on the chance to enjoy special discounts <br> a
       </div>
 
       <!--faq10-->
-      <div class="card bg-danger text-white">
-        <ul class="list-group list-group">
-          <a href="#faq10" class="list-group-item list-group-item-action  fs-3 bg-dark text-white"
+      <div class="card bg-dark text-white">
+        <ul class="list-group list-group-flush">
+          <a href="#faq10" class="list-group-item list-group-item-action fs-4 bg-dark text-white"
             data-bs-toggle="collapse"> How can I contact customer service?</a>
         </ul>
         <div class="collapse" id="faq10" data-bs-parent="#accordion">
