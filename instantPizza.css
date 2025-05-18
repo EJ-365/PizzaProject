@@ -1,3 +1,6 @@
+html{
+  font-family: "Titillium Web", sans-serif;
+}
 body{
   /* adding the max-width and height to avoid over-floating */
   font-family: "Titillium Web", sans-serif;
@@ -75,6 +78,20 @@ input{
 }
 .jumbotron p, h2 {
   margin-left: 90px;
+}
+/* carousel images */
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+  font-size: 60px;
+}
+
+/* selecting all the text inside the carousel inner */
+.carousel-inner h3,p{
+  font-size: 22px;
 }
 /* testimonial */
 .testimonial{
