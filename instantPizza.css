@@ -173,7 +173,7 @@ p {
 
 /* adding responsive column to the footer section on smaller screen devices */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1196px) {
   .testimonial-container .row {
     display: block !important;
   }
