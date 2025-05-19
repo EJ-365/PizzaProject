@@ -1,88 +1,88 @@
-html{
+html {
   font-family: "Titillium Web", sans-serif;
 }
-body{
+body {
   /* adding the max-width and height to avoid over-floating */
   font-family: "Titillium Web", sans-serif;
-    max-width: 100vw;
+  max-width: 100vw;
   max-height: 100vh;
-  }  
+}
 
 /* for the main navbar (the first one ) */
- .main-navbar  {
-border-bottom: 0.5px solid gray;
- }
+.main-navbar {
+  border-bottom: 0.5px solid gray;
+}
 
- /* bootstrap icon (bi)  styling for the nav links */
- .bi {
+/* bootstrap icon (bi)  styling for the nav links */
+.bi {
   font-size: 20px;
- }
+}
 
- /* order counts( shows how many order you have at the top right of the navbar) */
- .badge{
+/* order counts( shows how many order you have at the top right of the navbar) */
+.badge {
   text-align: center;
   position: absolute;
   bottom: 30px;
-  top:3px;
-  right:3px;
+  top: 3px;
+  right: 3px;
   width: auto;
   height: 30px;
   font-size: 15px;
-  margin:4px 5px;
- }
+  margin: 4px 5px;
+}
 
 /* navbar anchor <a> tag links */
-.navbar ul li a{
-   text-transform: uppercase;
-   font-size: 14px;
-     text-align: start;
+.navbar ul li a {
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: start;
   margin: 0 15px;
 }
 .navbar ul li a:hover {
-  color: #DC3545;
+  color: #dc3545;
   background: none;
 }
 
 /* all the text/placeholder inside the input should be italics */
-input{
+input {
   font-style: italic;
 }
 
 .apply-btn {
-  background-color: #DC3545;
+  background-color: #dc3545;
   text-align: center;
   text-transform: uppercase;
 }
 
-
 /* for the text inside the welcome page paragraph */
 
-.welcome-page-paragraph{
+.welcome-page-paragraph {
   background-color: rgba(0, 0, 0, 0.301);
   padding: 50px;
-  margin-top:50px;
-  height:auto;
+  margin-top: 50px;
+  height: auto;
   text-align: start;
-
 }
 
 /* cta === jumbotron */
 .jumbotron {
   padding: 40px;
-   height: 400px;
+  height: 400px;
 }
 
 .jumbotron h2 {
-   margin-top: 60px;
-   margin-bottom: 30px;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
-.jumbotron p, h2 {
+.jumbotron p,
+h2 {
   margin-left: 90px;
 }
 /* carousel images */
 
-.carousel-control-next-icon, .carousel-control-prev-icon{
-  width:50px;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: #212529;
@@ -91,7 +91,8 @@ input{
 }
 
 /* selecting all the text inside the carousel inner */
-.carousel-inner h3,p{
+.carousel-inner h3,
+p {
   font-size: 22px;
 }
 
@@ -101,65 +102,57 @@ input{
   margin-bottom: 50px;
   height: auto;
   background-color: #212529;
-
 }
 
 /* testimonial card is for card w-100; */
-.testimonial-card{
+.testimonial-card {
   height: 430px;
-  border:none;
-  background-color: #D9D9D9;
-  margin:20px auto;
+  border: none;
+  background-color: #d9d9d9;
+  margin: 20px auto;
 }
 
 /* accordion container(basically accordion)  styling the <p> tag inside of it */
 
-.accordion-container p{
+.accordion-container p {
   font-size: 19px;
 }
 
-.accordion-container a{
+.accordion-container a {
   font-family: 18px;
 }
 
 /* dark mode icon on the top navbar */
 .darkMode {
   border-radius: 50%;
- background-color: #DC3545;
- border:none;
+  background-color: #dc3545;
+  border: none;
 }
 
 /* Background image styles */
 .bg-image {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Photos/cta-landing-pg.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("Photos/cta-landing-pg.jpg") center/cover no-repeat;
   width: 100%;
   height: 100%;
 }
 
-
 /* the car image */
-.logo-img{
- width: 70px;
-
+.logo-img {
+  width: 70px;
 }
 
 /* Responsiveness on smaller devices */
 
-/*remove the top header cta and paragraph */
-@media screen and (max-width: 480px) {
-  .top-header-cta, .top-p-cta {
-    display: none !important;
-  }  /* The marquee will remain visible */
-}
-
 /* remove the background landing page image on a smaller screen*/
 @media screen and (max-width: 767px) {
   .bg-image {
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Photos/cta-landing-pg-mobile.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("Photos/cta-landing-pg-mobile.jpg") center/cover no-repeat;
   }
 }
- /* for the navbar to align in the middle */
-@media screen and (max-width: 912px){
+/* for the navbar to align in the middle */
+@media screen and (max-width: 912px) {
   nav ul {
     display: flex;
     justify-content: center;
@@ -176,21 +169,99 @@ input{
   }
 }
 
+/* new update for the cards and few other component on a smaller screen */
+
 /* adding responsive column to the footer section on smaller screen devices */
-  @media screen and (max-width: 1024px) {
-      .footer-section{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          align-content: center;
-          margin: 10px;
-          text-align: center;
-          width: 100%;
-      }
-    
-      .footer-section * {
-          width: 100%;
-          max-width: 300px;
-      }
+
+@media screen and (max-width: 1024px) {
+  .testimonial-container .row {
+    display: block !important;
   }
+  .testimonial-container .col {
+    margin-bottom: 20px;
+    display: block !important;
+    width: 100% !important;
+  }
+}
+
+/* for iphone xr,12,12pro and 14 */
+@media screen and (max-width: 414px) {
+  .testimonial-container .col {
+    margin-bottom: 50px;
+  }
+}
+
+/* removing the welcome to instant pizza paragraph underneath it */
+
+@media screen and (max-width: 430px) {
+   .welcome-page-paragraph{
+    display: none;
+  }
+
+  .carousel-images img{
+ width: 160px;
+  }
+  .carousel-caption, h3, p{
+    font-size: 15px !important;
+  }
+
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: none !important;
+    border-radius: 40% !important;
+  }
+  .testimonial-intro{
+    text-align: center !important;
+  }
+
+}
+
+/* fixing the cart icon for checkout */
+@media screen and (max-width:991px) {
+.checkout-cart{
+  display: none;
+}
+
+.promo-code{
+  width:auto;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+}
+
+/* fixing the button inside the jumbotron */
+
+@media screen and (max-width: 670px) {
+  .jumbotron button {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
+    width: 150px;
+    text-align: center;
+  }
+
+  .jumbotron {
+    height: auto !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-section * {
+    width: 100%;
+    max-width: 300px;
+  }
+}
