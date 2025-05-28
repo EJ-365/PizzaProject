@@ -1,4 +1,4 @@
-CheatSheet for Bootstrap
+# CheatSheet for Bootstrap
 
 <!-- Center an image using mx-auto -->
 <img src="image.jpg" class="mx-auto d-block">
